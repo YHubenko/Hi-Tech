@@ -1,7 +1,4 @@
 @media (max-width: 900px) {
-    html {
-        overflow-x: hidden;
-    }
     .main-header {
         display: none;
     }
@@ -24,10 +21,14 @@
     header .burger {
         width: 50px;
         position: relative;
-        top: -10px;
     }
     header .burger:hover {
         cursor: pointer;
+    }
+    header .logo-container {
+        position: relative;
+        height: 50px;
+        top: 27%;
     }
 
     .about-block {
@@ -71,7 +72,7 @@
     .latest-products-block {
         background-color: #ffffff;
         width: 100vw;
-        height: 1200px;
+        height: 1350px;
     }
     .latest-products-title,
     .latest-products-description {
@@ -89,7 +90,7 @@
         display: grid;
         margin: 5vh 10vw;
         grid-template-rows: 33% 33% 33%;
-        gap: 25px;
+        gap: 15px;
     }
     .product-title {
         font-size: 22px;
@@ -104,6 +105,7 @@
     .product-description {
         color: #88898c;
         font-size: 17px;
+        margin-bottom: 10px;
     }
     .products-wrapper img {
         width: 75vw;
@@ -111,6 +113,9 @@
     .latest-products-block a {
         color: #727375;
         text-decoration: none;
+    }
+    .latest-products-block .product {
+        height: 350px;
     }
 
 
@@ -145,7 +150,7 @@
     .prices-block .prices-wrapper {
         display: grid;
         grid-template-rows: 33% 33% 33%;
-        margin: 0 auto;
+        margin: 2vh auto 0;
         justify-content: center;
         gap: 5px;
         width: 1000px;
